@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   compress: true,
   images: {
     formats: ["image/webp"],
+    minimumCacheTTL: 60,
   },
 };
 

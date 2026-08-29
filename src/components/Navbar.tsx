@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo Bölümü */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden border border-white/10 group-hover:rotate-6 transition-transform">
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden border border-white/10 group-hover:rotate-6 transition-transform relative shrink-0">
             <Image
               src="/me.webp"
               alt="Halil Uysal"
