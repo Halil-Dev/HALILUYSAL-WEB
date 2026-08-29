@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Halil Uysal | Yazılım Mühendisi & Dijital Çözümler",
     description: "Kurumsal web tasarım, otomasyon ve yazılım çözümleri.",
-    url: "https://haliluysal.dev",
+    url: "https://haliluysal.pw",
     siteName: "Halil Uysal",
     locale: "tr_TR",
     type: "website",
