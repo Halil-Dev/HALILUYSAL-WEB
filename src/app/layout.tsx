@@ -12,6 +12,8 @@ import { WHATSAPP_URL } from "@/constants";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+  preload: true,
+  fallback: ["system-ui", "sans-serif"],
 });
 
 export const metadata: Metadata = {
