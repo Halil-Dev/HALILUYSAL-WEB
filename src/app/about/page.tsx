@@ -23,7 +23,7 @@ const AboutPage = () => {
         <div className="shrink-0">
           <div className="w-48 h-48 rounded-3xl overflow-hidden border-2 border-primary/30 shadow-2xl shadow-primary/10">
             <Image
-              src="/me.jpg"
+              src="/me.webp"
               alt="Halil Uysal"
               width={192}
               height={192}
