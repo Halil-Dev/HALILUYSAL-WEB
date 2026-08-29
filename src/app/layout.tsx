@@ -12,26 +12,61 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://haliluysal.pw"),
   title: {
     default: "Halil Uysal | Yazılım Mühendisi & Dijital Çözümler",
     template: "%s | Halil Uysal",
   },
   description:
-    "Türkiye genelinde kurumsal web tasarımı, otomasyon sistemleri ve yazılım geliştirme hizmetleri. Modern, hızlı ve SEO uyumlu çözümler.",
-  keywords: ["web tasarım", "yazılım mühendisi", "otomasyon", "Next.js", "SEO", "Türkiye"],
-  authors: [{ name: "Halil Uysal" }],
+    "Türkiye genelinde modern web geliştirme, kurumsal yazılım ve otomasyon çözümleri. Hızlı, güvenli ve SEO uyumlu sistemler.",
+  keywords: [
+    "Halil Uysal",
+    "Yazılım Mühendisi",
+    "Web Tasarım",
+    "Next.js Geliştirici",
+    "Full Stack Developer",
+    "Otomasyon Sistemleri",
+    "Freelance Yazılımcı",
+  ],
+  authors: [{ name: "Halil Uysal", url: "https://haliluysal.pw" }],
+  creator: "Halil Uysal",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Halil Uysal | Yazılım Mühendisi & Dijital Çözümler",
-    description: "Kurumsal web tasarım, otomasyon ve yazılım çözümleri.",
+    description:
+      "Modern web sistemleri, kurumsal web tasarımı ve uçtan uca yazılım çözümleri.",
     url: "https://haliluysal.pw",
-    siteName: "Halil Uysal",
+    siteName: "Halil Uysal Portfolio",
     locale: "tr_TR",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Halil Uysal - Yazılım Mühendisi",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Halil Uysal | Yazılım Mühendisi",
-    description: "Kurumsal web tasarım, otomasyon ve yazılım çözümleri.",
+    description:
+      "Modern web sistemleri, kurumsal web tasarımı ve uçtan uca yazılım çözümleri.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -40,24 +75,37 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Halil Uysal",
+    url: "https://haliluysal.pw",
+    jobTitle: "Software Engineer",
+    knowsAbout: [
+      "Web Development",
+      "Next.js",
+      "React",
+      "Cybersecurity",
+      "Automation",
+    ],
+  };
+
   return (
     <html lang="tr" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${inter.className} text-white antialiased relative min-h-screen bg-black`}
       >
-        {/* Yıldız arka plan efekti */}
         <div className="starfield-overlay" />
-
-        {/* Navigasyon */}
         <Navbar />
-
-        {/* Sayfa içeriği */}
         <main className="relative z-10 pt-20">{children}</main>
-
-        {/* Footer */}
         <Footer />
 
-        {/* Sabit WhatsApp Butonu */}
         <a
           href={WHATSAPP_URL}
           target="_blank"
