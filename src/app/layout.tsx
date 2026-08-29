@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -115,6 +116,9 @@ export default function RootLayout({
         >
           <MessageCircle size={28} color="white" fill="white" />
         </a>
+
+        {/* Google Analytics Entegrasyonu */}
+        <GoogleAnalytics gaId="G-2S06J3Z4E5" />
       </body>
     </html>
   );
