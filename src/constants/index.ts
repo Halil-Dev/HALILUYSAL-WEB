@@ -1,7 +1,7 @@
 // ─── İletişim Bilgileri ───────────────────────────────────────────────────────
-export const PHONE_NUMBER = "905444100368";
-export const PHONE_DISPLAY = "+90 544 410 03 68";
-export const EMAIL = "haliluysal.dev@gmail.com";
+export const PHONE_NUMBER = process.env.NEXT_PUBLIC_PHONE_NUMBER || "900000000000";
+export const PHONE_DISPLAY = process.env.NEXT_PUBLIC_PHONE_DISPLAY || "+90 000 000 00 00";
+export const EMAIL = process.env.NEXT_PUBLIC_EMAIL || "contact@example.com";
 export const WHATSAPP_URL = `https://wa.me/${PHONE_NUMBER}`;
 export const PHONE_URL = `tel:+${PHONE_NUMBER}`;
 export const LINKEDIN_URL = "https://linkedin.com/in/haliluysal1";
