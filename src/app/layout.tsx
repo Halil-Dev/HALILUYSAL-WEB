@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -119,6 +120,7 @@ export default function RootLayout({
 
         {/* Google Analytics Entegrasyonu */}
         <GoogleAnalytics gaId="G-2S06J3Z4E5" />
+        <Analytics />
       </body>
     </html>
   );
