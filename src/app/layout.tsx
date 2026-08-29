@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next"
 import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
@@ -121,6 +122,7 @@ export default function RootLayout({
         {/* Google Analytics Entegrasyonu */}
         <GoogleAnalytics gaId="G-2S06J3Z4E5" />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
