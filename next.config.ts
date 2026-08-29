@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   compress: true,
   images: {
-    formats: ["image/avif", "image/webp"],
+    formats: ["image/webp"],
   },
 };
 

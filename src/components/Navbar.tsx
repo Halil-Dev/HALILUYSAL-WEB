@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link href="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden border border-white/10 group-hover:rotate-6 transition-transform">
             <Image
-              src="/me.jpg"
+              src="/me.webp"
               alt="Halil Uysal"
               width={40}
               height={40}
