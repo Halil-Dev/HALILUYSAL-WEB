@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import ContactPage from "./ContactClient";
 
 export const metadata: Metadata = {
-  title: "İletişim",
+  title: "İletişim & Teklif Al",
   description:
-    "Halil Uysal ile iletişime geçin. WhatsApp, e-posta veya formu doldurarak ücretsiz teklif alın.",
+    "Web tasarımı ve yazılım projeleriniz için ücretsiz fiyat teklifi alın veya doğrudan iletişime geçin.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function Page() {

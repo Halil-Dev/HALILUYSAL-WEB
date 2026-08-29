@@ -5,9 +5,12 @@ import { Github, ExternalLink, Code2, ArrowRight } from "lucide-react";
 import { PROJECTS, WHATSAPP_URL } from "@/constants";
 
 export const metadata: Metadata = {
-  title: "Projeler",
+  title: "Projeler & Portföy",
   description:
-    "Halil Uysal tarafından geliştirilen yazılım projeleri ve referanslar. Web uygulamaları, otomasyon sistemleri ve daha fazlası.",
+    "Next.js, modern web teknolojileri ve otomasyon sistemleri ile geliştirilmiş örnek çalışmalar ve teknik vaka analizleri.",
+  alternates: {
+    canonical: "/projects",
+  },
 };
 
 const STATUS_STYLES: Record<string, string> = {

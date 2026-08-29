@@ -8,7 +8,10 @@ import { SKILLS } from "@/constants";
 export const metadata: Metadata = {
   title: "Hakkımda",
   description:
-    "Yazılım Mühendisi Halil Uysal hakkında. Mehmet Akif Ersoy Üniversitesi öğrencisi, web tasarım ve otomasyon uzmanı.",
+    "Yazılım Mühendisi Halil Uysal; modern web geliştirme, otomasyon sistemleri ve teknik projeler üzerine odaklanan profesyonel çözümler sunmaktadır.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 const AboutPage = () => {

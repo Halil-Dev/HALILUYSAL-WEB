@@ -5,9 +5,12 @@ import { Globe, Cpu, Code2, Zap, ArrowRight } from "lucide-react";
 import { SERVICES, WHATSAPP_URL } from "@/constants";
 
 export const metadata: Metadata = {
-  title: "Hizmetler",
+  title: "Hizmetler & Dijital Çözümler",
   description:
-    "Kurumsal web sitesi, otomasyon sistemleri ve full-stack uygulama geliştirme hizmetleri. İşletmenizi dijital dünyada büyütelim.",
+    "Yazılım Mühendisi Halil Uysal'dan işletmelere özel modern web tasarımı, süreç otomasyonları ve kurumsal yazılım çözümleri.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 const ICONS: Record<string, React.ReactNode> = {
